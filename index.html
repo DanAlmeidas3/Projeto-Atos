@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Prática Atos Capital</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+
+<body>
+    <header>
+
+<button class="Botao" id="btnModificar" onclick= "abrirFormCadastrar()">Novo Registro</button>
+</header>
+  <main class="tabela"><table>
+    <table id="tabela">
+        <tr class="titulo">
+            <th>ID</th>
+            <th>NOME</th>
+            <th>EMAIL</th>
+            <th>AÇÕES</th>
+        </tr>
+    <tbody>
+    <tr class="corpo">
+            <td>3246</td>
+            <td>Kazuyia Nichiro</td>
+            <td>kazuyia123@emert.net</td>
+            <td><button>Editar</button>&nbsp;<button class="remove-btn">Excluir</button> </td>
+        </tr>
+        <tr>
+            <td>3365</td>
+            <td>Zaraki Kenpachi</td>
+            <td>momochiro@sigma.net</td>
+            <td><button onclick="abrirFormModificar()">Editar</button>&nbsp;<button class="remove-btn">Excluir</button> </td>
+        </tr>
+        <tr>
+            <td>2356</td>
+            <td>Roger Romeu</td>
+            <td>roger345@romeu.net</td>
+            <td><button onclick="abrirFormModificar()">Editar</button>&nbsp;<button class="remove-btn">Excluir</button> </td>
+        </tr>
+        <tr>
+            <td>1010</td>
+            <td>Kazekage Nichiro</td>
+            <td>kaze123@nichiro.net</td>
+            <td><button onclick="abrirFormModificar()">Editar</button>&nbsp;<button class="remove-btn">Excluir</button> </td>
+        </tr>
+        <tr>
+            <td>1356</td>
+            <td>Carol Donabelle Franco</td>
+            <td>cadofra123@franco.net</td>
+            <td><button onclick="abrirFormModificar()">Editar</button>&nbsp;<button class="remove-btn">Excluir</button> </td>
+        </tr>
+        <tr>
+            <td>1825</td>
+            <td>Abelardo Sam</td>
+            <td>abel136@sam.net</td>
+            <td><button onclick="abrirFormModificar()">Editar</button>&nbsp;<button class="remove-btn">Excluir</button> </td>
+        </tr>
+        <tr>
+            <td>2525</td>
+            <td>Kaz Belle</td>
+            <td>kaz@belle.net</td>
+            <td><button onclick="abrirFormModificar()">Editar</button>&nbsp;<button >Excluir</button> </td>
+        </tr>
+        <tr>
+            <td>3584</td>
+            <td>Paula Carla</td>
+            <td>carla3@carla.net</td>
+            <td><button onclick="abrirFormModificar()">Editar</button>&nbsp;<button>Excluir</button> </td>
+        </tr>
+        <tr>
+            <td>1653</td>
+            <td>Niguiri Idem</td>
+            <td>niguiri@idem.net</td>
+            <td><button onclick="abrirFormModificar()">Editar</button>&nbsp;<button>Excluir</button> </td>
+        </tr>
+        <tr>
+            <td>1886</td>
+            <td>Danilo Almeida</td>
+            <td>danalmeida123@almeida.net</td>
+            <td><button onclick="abrirFormModificar()">Editar</button>&nbsp;<button>Excluir</button> </td>
+        </tr>
+    </tbody>
+</table> 
+
+<table id="form" width="30%" cellspacing="0" cellpadding="0" border="1">
+        <input type="hidden" id="id" />
+        <tr>
+            <td colspan='2' class='text-center'><strong>CADASTRAR NOVO CLIENTE:</strong></td>
+        </tr>
+        <tr>
+            <td>Nome:</td>
+            <td><input type="text" id="nome" /></td>
+        </tr>
+        <tr>
+            <td>E-mail:</td>
+            <td><input type="text" id="email" /></td>
+        </tr>
+        <tr>
+            <td>Genêro:</td>
+            <td><input type="text" id="gender" /></td>
+        </tr> 
+        <tr>
+            <td colspan='2' class='text-center'>
+                <button type="text" id="btnCadastrar" onclick="botaoCadastrar()">Cadastrar</button>
+                
+                <button type="text" id="btnFechar" onclick="limpaFormulario()">Fechar</button>
+        
+            </td>
+        </table>            
+</main> 
+<script src="api.js"></script>
+<script src="funcoes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

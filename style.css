@@ -1,0 +1,74 @@
+
+header{
+
+        width: 100%;
+        height: 10vh;
+        color: white;
+        font-size: 2em;
+        font-family: Ubuntu;
+        text-align:justify;
+        
+        
+    }
+.input-text {
+        flex: 1;
+        min-width: 210px;
+        margin: 5px;
+        height: 20px;
+        padding-left: 5px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #262626;
+        transition: 0.25s;
+        outline: none;
+    }
+.Botao{
+    flex: 1;
+    margin: 5px;
+    height: 39px;
+    border-width: 1px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    color: #faf4f4;
+    background-color: #0151fc;
+}
+.Botao:hover {
+    background-color: #383838;
+    border-color: #383838;
+    color: white;
+}
+.cabecalho {
+        width: 80vw;
+        font-family: Ubuntu;
+        margin: 0 auto;
+        margin-top: 5vh;
+        display: flex;
+    }
+
+.tabela{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-left: 4ch;
+    
+}
+.titulo{
+    background-color:rgb(35, 34, 48);
+    color: white;
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background:lightgray;
+}  
+tr{
+    height: 35px;}
+main table#form{
+    margin:0 auto;
+    margin-bottom:20px;
+    display:none;
+}
