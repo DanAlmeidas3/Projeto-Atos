@@ -64,4 +64,4 @@ async function apiEditarCliente (){
             const data = await response.json()
             return data;
         }     
-    "teste"
+    
